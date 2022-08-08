@@ -1,0 +1,105 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="container">
+    
+    <div class="sidebar flex-column bg-light">
+        <img class="logo mb-4" src="./assets/images/logo-ANSWER.svg" alt="logo">
+        <div class="sidebar-body flex-column justify-content-between">
+            <ul class="nav flex-column bg-light">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                        <span class="material-icons me-3 align-middle">
+                            assessment</span>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                        <span class="material-icons me-3 align-middle">
+                            question_answer</span>Question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                        <span class="material-icons me-3 align-middle">
+                            assignment</span>Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                        <span class="material-icons me-3 align-middle">
+                            video_library</span>Course</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold ps-0 text-success active" aria-current="page" href="#">         
+                    <span class="material-icons me-3 align-middle">supervisor_account</span>Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                        <span class="material-icons me-3 align-middle">
+                            settings</span>Setting</a>
+                </li>
+              </ul>
+            <div class="profile d-flex lh-1">
+                <div class="profile-img me-3 align-middle"></div>
+                <div class="profile-content">
+                    <p class="profile-name mb-2">Andy Chen</p>
+                    <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="main">
+    
+        <div class="header d-flex">
+            <div class="title d-flex">
+
+                <p class="fw-bold fs-3">Admin</p>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-icons icon-style2 text-success align-middle">add</span>Add New Admin</button>
+  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="account border-bottom">
+                                <p class="fw-bold mb-3">Account</p>
+                                <form class="">
+                                    <label for="name" id="name">Name</label>
+                                    <br>
+                                    <input type="text" id="name" class="w-100 mb-3">
+                                    <br>
+                                    <label for="email" id="email">Email</label>
+                                    <br>
+                                    <input type="email" id="email" class="w-100 mb-4">
+                                </form>
+                            </div>
+                            <div class="border-bottom">
+                                <p class="fw-bold mt-4">Verification</p>
+                                <p class="fw-bold mb-3"><span class="material-icons text-danger align-middle me-2">warning</span>Unverified</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn border border-success text-success" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-success">Add</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+       
+        
+
+    </div>
+</div>
