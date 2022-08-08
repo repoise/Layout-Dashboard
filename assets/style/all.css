@@ -1,10 +1,28 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&family=Roboto+Mono&display=swap);
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
 body {
   font-family: "Lato", "Roboto Mono", serif; }
+
+.ps32 {
+  padding-left: 32px; }
+
+.pe32 {
+  padding-right: 32px; }
+
+.py12 {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+.px32 {
+  padding: 0 32px; }
+
+.mb32 {
+  margin-bottom: 32px; }
+
+.mb63 {
+  margin-bottom: 63px; }
+
+.fs20 {
+  font-size: 20px; }
 
 .sidebar {
   position: fixed;
@@ -32,8 +50,10 @@ body {
 .main {
   margin-left: 296px;
   padding: 32px; }
-  .main .header .icon-style2 {
+  .main .icon-style2 {
     font-size: 24px; }
+  .main .icon-style3 {
+    font-size: 16px; }
   .main .modal-body {
     padding: 16px 32px; }
 

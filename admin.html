@@ -19,10 +19,16 @@
 
   
 <div class="container">
-    
+<!--sidebar  -->
     <div class="sidebar flex-column bg-light">
+
+        <!-- LOGO -->
         <img class="logo mb-4" src="./assets/images/logo-ANSWER.svg" alt="logo">
+        
+        <!-- Sidebar-body -->
         <div class="sidebar-body flex-column justify-content-between">
+            
+            <!-- nav -->
             <ul class="nav flex-column bg-light">
                 <li class="nav-item">
                     <a class="nav-link fw-bold ps-0 text-dark" href="#">
@@ -54,6 +60,8 @@
                             settings</span>Setting</a>
                 </li>
               </ul>
+
+            <!-- profile -->
             <div class="profile d-flex lh-1">
                 <div class="profile-img me-3 align-middle"></div>
                 <div class="profile-content">
@@ -61,58 +69,303 @@
                     <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
                 </div>
             </div>
-            
         </div>
     </div>
 
-
+<!-- Main Admin -->
     <div class="main">
-    
-        <div class="header d-flex">
-            <div class="title d-flex">
-
-                <p class="fw-bold fs-3">Admin</p>
+        <!-- Admin Header -->
+        <div class="d-flex justify-content-between align-items-center mb32">
+            <!-- 左上 -->
+            <div class="title d-flex align-items-center">
+                <p class="fw-bold fs-3 mb-0">Admin</p>
                 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-icons icon-style2 text-success align-middle">add</span>Add New Admin</button>
+                <a class="btn ms-5 ps-0 fs-6 fw-bold" data-bs-toggle="modal" data-bs-target="#addNewAdmin" href="#" role="button">
+                    <span class="material-icons icon-style2 text-success align-middle me-1">add</span>Add New Admin</a>
   
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="addNewAdmin" tabindex="-1" aria-labelledby="addNewAdminLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+
+                        <!-- modal header -->
+                        <div class="modal-header py-3 px32">
+                        <h5 class="modal-title fw-bold fs-4" id="addNewAdminLabel">New Admin</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+
+                        <!-- modal body -->
                         <div class="modal-body">
+
+                            <!-- Account -->
                             <div class="account border-bottom">
-                                <p class="fw-bold mb-3">Account</p>
+                                <p class="fw-bold fs20 mb-3">Account</p>
                                 <form class="">
-                                    <label for="name" id="name">Name</label>
+                                    <label for="name" id="name" class="mb-1">Name</label>
                                     <br>
-                                    <input type="text" id="name" class="w-100 mb-3">
+                                    <input type="text" id="name" class="w-100 mb-3 py12">
                                     <br>
-                                    <label for="email" id="email">Email</label>
+                                    <label for="email" id="email" class="mb-1">Email</label>
                                     <br>
-                                    <input type="email" id="email" class="w-100 mb-4">
+                                    <input type="email" id="email" class="w-100 mb-4 py12">
                                 </form>
                             </div>
-                            <div class="border-bottom">
-                                <p class="fw-bold mt-4">Verification</p>
+
+                            <!-- Verification -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Verification</p>
                                 <p class="fw-bold mb-3"><span class="material-icons text-danger align-middle me-2">warning</span>Unverified</p>
+                                <a class="text-success btn border-success w-100 py-3" href="#">Send Verification Mail</a>
                             </div>
+
+                            <!-- Access Level -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Access Level</p>
+
+                                <select class="form-select py-3 text-secondary" aria-label="Select access level">
+                                    <option selected>-Choose access level-</option>
+                                    <option value="1">Admin</option>
+                                    <option value="2">Can edit</option>
+                                    <option value="3">Can Read</option>
+                                  </select>
+                            </div>
+
+                            <!-- Custom Access -->
+                            <div class="py-4">
+                                <p class="fw-bold fs20">Custom Access</p>
+
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lecture
+                                    </label>
+                                  </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Coupon
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Message
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Setting
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Task Menu
+                                    </label>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn border border-success text-success" data-bs-dismiss="modal">cancel</button>
-                        <button type="button" class="btn btn-success">Add</button>
+
+                        <!-- modal footer -->
+                        <div class="modal-footer py-3 px32">
+                        <button type="button" class="btn border border-success text-success py-2 px32 me-0" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-success py-2 px32 ms-3">Add</button>
                         </div>
+
                     </div>
                     </div>
-                </div>    
+                </div> 
+            </div>
+            <!-- 右上角按鈕 -->
+            <div class="d-flex align-items-center">
+                <span class="material-icons icon-style2 mb-0">search</span>
+                <span class="material-icons icon-style2 mb-0 ms-4">notifications_active</span>
             </div>
         </div>
+        <!-- Admin body table -->
+        <table class="table align-middle table-hover mb63">
+        <thead>
+            <tr>
+            <th scope="col fw-bold">ID
+                <span class="material-icons icon-style3 align-middle ms-2 text-success">
+                    arrow_downward
+                </span>
+            </th>
+            <th scope="col fw-bold">Name</th>
+            <th scope="col fw-bold">Email</th>
+            <th scope="col fw-bold">Verified</th>
+            <th scope="col fw-bold"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>#1</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#2</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#3</td>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#4</td>
+            <td>Pharrell Murray</td>
+            <td>pharrell.murray@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#5</td>
+            <td>Annika Mcbride</td>
+            <td>annika.mcbride@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#6</td>
+            <td>Fatimah Clark</td>
+            <td>fatimah.clark@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#7</td>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia.rhodes@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#8</td>
+            <td>Tillie Lucero</td>
+            <td>tillie.lucero@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#9</td>
+            <td>Sabrina Stephenson</td>
+            <td>sabrina.stephenson@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+
+            <tr>
+            <td>#10</td>
+            <td>Annie Smith</td>
+            <td>annie.smith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-end"><span class="material-icons icon-style2 me-4">
+                    visibility 
+                </span>
+                <span class="material-icons icon-style2">
+                    edit
+                </span>
+            </td>
+            </tr>
+            
+        </tbody>
+        </table>
        
-        
+        <!-- pagination -->
+        <nav aria-label="Search results pages">
+            <ul class="pagination justify-content-end mb-0">
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Previous">
+                    <span class="material-icons" aria-hidden="true">
+                        chevron_left
+                    </span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-success active bg-success text-white" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Next">
+                    <span class="material-icons" aria-hidden="true">
+                        navigate_next
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
     </div>
 </div>
