@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&family=Roboto+Mono&display=swap);
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Lato", "Roboto Mono", serif; }
+
+.sidebar {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  padding: 32px; }
+  .sidebar .nav-link {
+    padding: 15px 0; }
+  .sidebar .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 32px;
+    width: 4px;
+    border-left: 4px solid #198754; }
+  .sidebar .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(../images/andychen.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+
+.main {
+  margin-left: 296px;
+  padding: 32px; }
+  .main .header .icon-style2 {
+    font-size: 24px; }
+  .main .modal-body {
+    padding: 16px 32px; }
+
+.box {
+  width: 250px;
+  height: 250px; }
+
+/*# sourceMappingURL=all.css.map */
