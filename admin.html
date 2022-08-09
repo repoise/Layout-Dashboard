@@ -19,55 +19,51 @@
 
   
 <div class="container">
-<!--sidebar  -->
-    <div class="sidebar flex-column bg-light">
+    <!--sidebar  -->
+    <div class="sidebar bg-light">
 
         <!-- LOGO -->
         <img class="logo mb-4" src="./assets/images/logo-ANSWER.svg" alt="logo">
         
-        <!-- Sidebar-body -->
-        <div class="sidebar-body flex-column justify-content-between">
-            
-            <!-- nav -->
-            <ul class="nav flex-column bg-light">
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                        <span class="material-icons me-3 align-middle">
-                            assessment</span>Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                        <span class="material-icons me-3 align-middle">
-                            question_answer</span>Question</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                        <span class="material-icons me-3 align-middle">
-                            assignment</span>Assignment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                        <span class="material-icons me-3 align-middle">
-                            video_library</span>Course</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold ps-0 text-success active" aria-current="page" href="#">         
-                    <span class="material-icons me-3 align-middle">supervisor_account</span>Admin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                        <span class="material-icons me-3 align-middle">
-                            settings</span>Setting</a>
-                </li>
-              </ul>
+        <!-- nav -->
+        <ul class="nav flex-column bg-light">
+            <li class="nav-item">
+                <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                    <span class="material-icons me-3 align-middle">
+                        assessment</span>Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                    <span class="material-icons me-3 align-middle">
+                        question_answer</span>Question</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                    <span class="material-icons me-3 align-middle">
+                        assignment</span>Assignment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                    <span class="material-icons me-3 align-middle">
+                        video_library</span>Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold ps-0 text-success active" aria-current="page" href="#">         
+                <span class="material-icons me-3 align-middle">supervisor_account</span>Admin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                    <span class="material-icons me-3 align-middle">
+                        settings</span>Setting</a>
+            </li>
+          </ul>
 
-            <!-- profile -->
-            <div class="profile d-flex lh-1">
-                <div class="profile-img me-3 align-middle"></div>
-                <div class="profile-content">
-                    <p class="profile-name mb-2">Andy Chen</p>
-                    <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
-                </div>
+        <!-- profile -->
+        <div class="profile d-flex lh-1 position-absolute bottom-0 mb32">
+            <div class="profile-img me-3 align-middle"></div>
+            <div class="profile-content">
+                <p class="profile-name mb-2">Andy Chen</p>
+                <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
             </div>
         </div>
     </div>
@@ -80,11 +76,11 @@
             <div class="title d-flex align-items-center">
                 <p class="fw-bold fs-3 mb-0">Admin</p>
                 
-                <!-- Button trigger modal -->
+                <!-- Click to add new admin -->
                 <a class="btn ms-5 ps-0 fs-6 fw-bold" data-bs-toggle="modal" data-bs-target="#addNewAdmin" href="#" role="button">
                     <span class="material-icons icon-style2 text-success align-middle me-1">add</span>Add New Admin</a>
   
-                <!-- Modal -->
+                <!--Add new admin Modal -->
                 <div class="modal fade" id="addNewAdmin" tabindex="-1" aria-labelledby="addNewAdminLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
@@ -171,8 +167,8 @@
 
                         <!-- modal footer -->
                         <div class="modal-footer py-3 px32">
-                        <button type="button" class="btn border border-success text-success py-2 px32 me-0" data-bs-dismiss="modal">cancel</button>
-                        <button type="button" class="btn btn-success py-2 px32 ms-3">Add</button>
+                        <button type="button" class="btn border border-success border-2 text-success py-2 px32 me-0" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-success border-2 py-2 px32 ms-3">Add</button>
                         </div>
 
                     </div>
@@ -181,10 +177,15 @@
             </div>
             <!-- 右上角按鈕 -->
             <div class="d-flex align-items-center">
-                <span class="material-icons icon-style2 mb-0">search</span>
-                <span class="material-icons icon-style2 mb-0 ms-4">notifications_active</span>
+                <a class="text-dark" href="#">
+                    <span class="material-icons icon-style2 mb-0">search</span>
+                </a>
+                <a class="text-dark" href="#">
+                    <span class="material-icons icon-style2 mb-0 ms-4">notifications_active</span>
+                </a>
             </div>
         </div>
+
         <!-- Admin body table -->
         <table class="table align-middle table-hover mb63">
         <thead>
@@ -206,12 +207,158 @@
             <td class="px-0 py-3">Emir Wicks</td>
             <td class="px-0 py-3">emir.wicks@mail.com</td>
             <td class="px-0 py-3">Yes</td>
-            <td class="text-end px-0 py-3"><span class="material-icons icon-style2 me-4">
+            <td class="text-end px-0 py-3">
+
+                <!-- Click to view admin -->
+                <span class="material-icons icon-style2 me-4"><a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewAdmin" href="#">
                     visibility 
+                </a>
                 </span>
-                <span class="material-icons icon-style2">
+                <!-- View-admin Modal -->
+                <div class="modal fade" id="viewAdmin" tabindex="-1" aria-labelledby="viewAdminLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content px32 py32 text-start">
+                            <!-- 預設顯示的範圍 -->
+                            <div class="d-flex justify-content-between">
+                                <!-- 左邊img -->
+                                <div class="admin-img me-4"></div>
+                            
+                                <!-- 右邊div -->
+                                <div class="view-admin-content">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <p class="mb-2 lh-1">#1</p>
+                                    <p class="mb-0 lh-1">Admin</p>
+                                    <p class="fs24 fw-bold mb-2 lh-1.2">Emir Wicks</p>
+                                    <p class="fs14 text-secondary mb20 lh-1">emir.wicks@mail.com</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="bg-light mb-0 fs14 py-2 px-3 lh-1">Verified</p>
+                                        <span class="material-icons"><a class="text-decoration-none text-success" data-bs-toggle="collapse" href="#toEditProfile" role="button" aria-expanded="false" aria-controls="toEditProfile">
+                                            keyboard_arrow_down
+                                        </a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 點擊箭頭以後顯示折疊範圍 -->
+                        
+                            <div class="collapse" id="toEditProfile">
+                                <div class="card border-0 card-body flex-row justify-content-end px-0 py-0 mt32">
+                                    <button type="button" class="btn border border-danger text-danger py-2 px32 me-0 fw-bold" data-bs-dismiss="modal">Deactivate</button>
+                                    <button type="button" class="btn btn-success py-2 px32 ms-3 fw-bold">Edit</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>                  
+                </div> 
+                
+                <!-- Click to Edit-admin-->
+                <span class="material-icons icon-style2"><a class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#editAdmin" href="#">
                     edit
+                </a>
                 </span>
+                <!-- Edit-admin Modal -->
+                <div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdminLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content text-start">
+
+                        <!-- modal header -->
+                        <div class="modal-header py-3 px32">
+                        <h5 class="modal-title fw-bold fs-4" id="addNewAdminLabel">Edit Admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- modal body -->
+                        <div class="modal-body">
+
+                            <!-- Account -->
+                            <div class="account border-bottom">
+                                <p class="fw-bold fs20 mb-3">Account</p>
+                                <form class="">
+                                    <label for="name" id="name" class="mb-1">Name</label>
+                                    <br>
+                                    <input type="text" id="name" class="w-100 mb-3 py12" value="Emir Wicks" disabled>
+                                    <br>
+                                    <label for="email" id="email" class="mb-1">Email</label>
+                                    <br>
+                                    <input type="email" id="email" class="w-100 mb-4 py12" value="emir.wicks@mail.com" disabled>
+                                </form>
+                            </div>
+
+                            <!-- Verification -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Verification</p>
+                                <p class="fw-bold mb-3"><span class="material-icons align-middle me-2">check_circle</span>Verified</p>
+                                <input type="submit" id="sendMail" class="text-secondary btn border-secondary w-100 py-3" value="Send Verification Mail" disabled>                    
+                            </div>
+
+                            <!-- Access Level -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Access Level</p>
+
+                                <select class="form-select py-3 text-secondary" aria-label="Select access level">
+                                    <option selected>-Choose access level-</option>
+                                    <option value="1">Admin</option>
+                                    <option value="2">Can edit</option>
+                                    <option value="3">Can Read</option>
+                                  </select>
+                            </div>
+
+                            <!-- Custom Access -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Custom Access</p>
+
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lecture
+                                    </label>
+                                  </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Coupon
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Message
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Setting
+                                    </label>
+                                </div>
+                                <div class="form-check ps32">
+                                    <input class="form-check-input msm32" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Task Menu
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Deactivate -->
+                            <div class="border-bottom py-4">
+                                <p class="fw-bold fs20">Deactivate Account</p>
+                                <p class="text-danger mb-3"><span class="material-icons text-danger align-middle me-2">warning</span>This cannot be undone!</p>
+                                <a class="text-danger fw-bold btn border-danger w-100 py-3 border-2" href="#">Deactivate This Account</a>
+                            </div>
+
+                        </div>
+
+                        <!-- modal footer -->
+                        <div class="modal-footer py-3 px32">
+                        <button type="button" class="btn border border-success border-2 text-success py-2 px32 me-0" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-success py-2 px32 ms-3 border-2">Update</button>
+                        </div>
+
+                    </div>
+                    </div>
+                </div> 
+
+            
             </td>
             </tr>
 

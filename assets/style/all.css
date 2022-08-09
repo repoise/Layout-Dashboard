@@ -12,8 +12,19 @@ body {
   padding-top: 12px;
   padding-bottom: 12px; }
 
+.py32 {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
 .px32 {
-  padding: 0 32px; }
+  padding-left: 32px;
+  padding-right: 32px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mt32 {
+  margin-top: 32px; }
 
 .mb32 {
   margin-bottom: 32px; }
@@ -21,8 +32,14 @@ body {
 .mb63 {
   margin-bottom: 63px; }
 
+.fs14 {
+  font-size: 14px; }
+
 .fs20 {
   font-size: 20px; }
+
+.fs24 {
+  font-size: 24px; }
 
 .sidebar {
   position: fixed;
@@ -56,9 +73,18 @@ body {
     font-size: 16px; }
   .main .modal-body {
     padding: 16px 32px; }
-
-.box {
-  width: 250px;
-  height: 250px; }
+  .main .admin-img {
+    min-width: 148px;
+    height: 148px;
+    background-image: url(../images/emir.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .main .view-admin-content {
+    width: calc(100vw - 165px);
+    position: relative; }
+    .main .view-admin-content .btn-close {
+      position: absolute;
+      right: 0; }
 
 /*# sourceMappingURL=all.css.map */
