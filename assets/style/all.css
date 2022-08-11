@@ -2,9 +2,6 @@
 body {
   font-family: "Lato", "Roboto Mono", serif; }
 
-* {
-  outline: 1px solid black; }
-
 .ps32 {
   padding-left: 32px; }
 
