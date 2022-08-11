@@ -5,90 +5,92 @@ engine: ejs
 current: assignment
 ---
 
-<div class="container-fluid">
-    <!-- sidebar -->
-    <div class="sidebar bg-light">
-  
-      <!-- LOGO -->
-      <img class="logo mb-4" src="./assets/images/logo-ANSWER.svg" alt="logo">
-      
-      <!-- nav -->
-      <ul class="nav flex-column bg-light">
-          <li class="nav-item">
-              <a class="nav-link fw-bold ps-0 text-dark" href="./index.html">
-                  <span class="material-icons me-3 align-middle">
-                      assessment</span>Dashboard</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                  <span class="material-icons me-3 align-middle">
-                      question_answer</span>Question</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link fw-bold ps-0 text-success active" href="./assignment.html">
-                  <span class="material-icons me-3 align-middle">
-                      assignment</span>Assignment</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                  <span class="material-icons me-3 align-middle">
-                      video_library</span>Course</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold ps-0 text-dark" aria-current="page" href="./admin.html">         
-              <span class="material-icons me-3 align-middle">supervisor_account</span>Admin</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link fw-bold ps-0 text-dark" href="#">
-                  <span class="material-icons me-3 align-middle">
-                      settings</span>Setting</a>
-          </li>
-        </ul>
-  
-      <!-- profile -->
-      <div class="profile d-flex lh-1 position-absolute bottom-0 mb32">
-          <div class="profile-img me-3 align-middle"></div>
-          <div class="profile-content">
-              <p class="profile-name mb-2">Andy Chen</p>
-              <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
-          </div>
-      </div>
-    </div>
 
-    <!-- Main -->
-    <main class="assigment">
+<!-- sidebar -->
+<div class="sidebar bg-light">
+
+    <!-- LOGO -->
+    <img class="logo mb-4" src="./assets/images/logo-ANSWER.svg" alt="logo">
+    
+    <!-- nav -->
+    <ul class="nav flex-column bg-light">
+        <li class="nav-item">
+            <a class="nav-link fw-bold ps-0 text-dark" href="./index.html">
+                <span class="material-icons me-3 align-middle">
+                    assessment</span>Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                <span class="material-icons me-3 align-middle">
+                    question_answer</span>Question</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold ps-0 text-success active" href="./assignment.html">
+                <span class="material-icons me-3 align-middle">
+                    assignment</span>Assignment</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                <span class="material-icons me-3 align-middle">
+                    video_library</span>Course</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link fw-bold ps-0 text-dark" aria-current="page" href="./admin.html">         
+            <span class="material-icons me-3 align-middle">supervisor_account</span>Admin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold ps-0 text-dark" href="#">
+                <span class="material-icons me-3 align-middle">
+                    settings</span>Setting</a>
+        </li>
+    </ul>
+
+    <!-- profile -->
+    <div class="profile d-flex lh-1 position-absolute bottom-0 mb32">
+        <div class="profile-img me-3 align-middle"></div>
+        <div class="profile-content">
+            <p class="profile-name mb-2">Andy Chen</p>
+            <p class="profile-email text-secondary mb-0">andy0401@mail.com</p>
+        </div>
+    </div>
+</div>
+
+<!-- Main -->
+<main class="assigment">
+    <div class="container-fluid">
         <!-- Assignment Header -->
         <div class="d-flex justify-content-between align-items-center mb32">
             <!-- 左上 -->
             <div class="title d-flex align-items-center">
                 <p class="fw-bold fs-3 mb-0">Assignment</p>
                 <!-- 下拉選單 -->
-
                 <div class="dropdown">
                     <button class="btn fw-bold px2 ms-5 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      All Courses
+                        All Courses
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">CSS</a></li>
                         <li><a class="dropdown-item" href="#">Tailwind</a></li>
                     </ul>
-                  </div>
-
+                </div>
+                
             </div>
             <!-- 右上角按鈕 -->
             <div class="d-flex align-items-center">
-                <span class="material-icons icon-style2 mb-0">search
-                    <a class="text-dark" href="#">
+                <span class="material-icons icon-style2 mb-0">
+                    <a class="text-dark text-decoration-none" href="#">
+                        search
                     </a>
                 </span>
-                <span class="material-icons icon-style2 mb-0 ms-4">notifications_active
-                    <a class="text-dark" href="#">
-                    </a>
+                <span class="material-icons icon-style2 mb-0 ms-4">
+                    <a class="text-dark text-decoration-none" href="#">
+                        notifications_active</a>
                 </span>
             </div>
         </div>
         <!-- body -->
         <div class="row">
+            <!-- 左邊欄位 -->
             <div class="col-4">
                 <!-- 下拉選單 -->
                 <div class="dropdown">
@@ -102,10 +104,10 @@ current: assignment
                         <li><a class="dropdown-item" href="#">Fianl Assignment</a></li>
                     </ul>
                 </div>
-
-                <!-- list -->
-                <ul class="list-group assignment-menu">
-                    <li class="list-group-item bg-light" aria-current="true">
+    
+                <!-- list group -->                
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active bg-light text-dark border-light" aria-current="true">
                         <div class="d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="fs12 mb-1">Chapter Assignment 2</p>
@@ -117,8 +119,8 @@ current: assignment
                                 <span class="fs12 text-secondary">Emily Wang</span>
                             </div>
                         </div>
-                    </li>
-                    <li class="list-group-item" aria-current="true">
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="fs12 mb-1">Chapter Assignment 1</p>
@@ -130,8 +132,8 @@ current: assignment
                                 <span class="fs12 text-secondary">David Xu</span>
                             </div>
                         </div>
-                    </li>
-                    <li class="list-group-item" aria-current="true">
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="fs12 mb-1">Final Assignment</p>
@@ -142,9 +144,9 @@ current: assignment
                                 </p>
                                 <span class="fs12 text-secondary">Tony Wei</span>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item" aria-current="true">
+                        </div>    
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="fs12 mb-1">Final Assignment</p>
@@ -156,10 +158,10 @@ current: assignment
                                 <span class="fs12 text-secondary">Christina Lin</span>
                             </div>
                         </div>
-                    </li>
-                    
-                  </ul>
+                    </a>
+                  </div>
             </div>
+            <!-- 右邊欄位 -->
             <div class="col-8">
                 <!-- 文字 -->
                 <div class="d-flex flex-column">
@@ -189,7 +191,7 @@ current: assignment
                                 <p class="fw-bold mb-1 mt-1">Emily Wang</p>
                                 <p class="fs12 text-secondary mb-3">10:38 AM (4 hours ago)</p>
                                 <p class="fs14 mb-3 lh-base">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light">div</code> is bigger than the height of the <code class="text-success bg-light">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
-
+    
                                 <button class="text-decoration-none text-dark px-3 py12 border border-secondary bg-light mb-3 rounded-2" href="#" download="HW-2-David.zip"><span class="material-icons fs-5 me-2 ">attach_file</span>HW-2-David.zip
                                 </button>
                             </div>
@@ -217,7 +219,7 @@ current: assignment
                                         </span>
                                     </div>                                
                                 </div>
-
+    
                                 <p class="fs14 mb-3 lh-base">
                                     Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
                                 </p>
@@ -243,15 +245,15 @@ current: assignment
                         <button type="button" class="btn btn-success border-2 py-2 px32 ms-3">Repley</button>
                     </div>
                 </div>
-
+    
             </div>
         </div>
+    </div>
 
 
 
 
 
-    </main>
-   
-</div>
+</main>
+
   
