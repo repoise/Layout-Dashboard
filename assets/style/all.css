@@ -2,6 +2,14 @@
 body {
   font-family: "Lato", "Roboto Mono", serif; }
 
+main {
+  margin-left: 296px;
+  padding: 32px; }
+
+p {
+  margin-bottom: 0;
+  line-height: 1; }
+
 .ps32 {
   padding-left: 32px; }
 
@@ -36,6 +44,9 @@ body {
 .mb63 {
   margin-bottom: 63px; }
 
+.fs12 {
+  font-size: 12px; }
+
 .fs14 {
   font-size: 14px; }
 
@@ -67,6 +78,17 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
+
+.assignment-menu {
+  width: 320px; }
+  .assignment-menu .list-group-item {
+    padding: 12px; }
+
+.reporter-img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .main {
   margin-left: 296px;
