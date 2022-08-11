@@ -3,9 +3,9 @@ body{
     font-family: "Lato", "Roboto Mono", serif;
 }
 
-// *{
-//     outline: 1px solid black;
-// }
+*{
+    outline: 1px solid black;
+}
 
 
 .ps32{
@@ -21,6 +21,10 @@ body{
 .py32{
     padding-top: 32px;
     padding-bottom: 32px;
+}
+.px2{
+    padding-left: 2px;
+    padding-right: 2px;
 }
 .px32{
     padding-left: 32px;

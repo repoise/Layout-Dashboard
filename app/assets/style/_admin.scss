@@ -1,33 +1,4 @@
 
-.sidebar{
-    position: fixed;
-    min-width: 296px;
-    min-height: 100vh;
-    padding: 32px;
-    .nav-link{
-        padding: 15px 0;
-    }
-    .nav-link.active::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        height: 32px;
-        width: 4px;
-        border-left: 4px solid $success;
-    }
-
-    .profile-img{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-image: url(../images/andychen.jpeg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-}
-
-
 .main{
     margin-left: 296px;
     padding: 32px;
