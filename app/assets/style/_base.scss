@@ -2,11 +2,20 @@
 body{
     font-family: "Lato", "Roboto Mono", serif;
 }
-
-*{
-    outline: 1px solid black;
+main{
+    margin-left: 296px;
+    padding: 32px;
 }
 
+// *{
+//     outline: 1px solid black;
+// }
+
+
+p{
+    margin-bottom: 0;
+    line-height: 1;
+}
 
 .ps32{
     padding-left: 32px;
@@ -45,6 +54,9 @@ body{
     margin-bottom: 63px;
 }
 
+.fs12{
+    font-size: 12px;
+}
 .fs14{
     font-size: 14px;
 }
